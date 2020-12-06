@@ -36,7 +36,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/onOff"
         android:layout_marginTop="25dp"
-        android:background="@android:color/holo_orange_light" />
+        android:background="@android:color/holo_blue_light" />
 
     <TextView
         android:id="@+id/readMsg"
@@ -59,15 +59,15 @@
         android:layout_alignParentStart="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:layout_toStartOf="@+id/sendButton" />
+        android:layout_toStartOf="@+id/connectButton" />
 
     <Button
-        android:id="@+id/sendButton"
+        android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:text="Send" />
+        android:layout_alignParentBottom="true"
+        android:text="Connect" />
 
     <TextView
         android:id="@+id/connectionStatus"
@@ -78,7 +78,7 @@
         android:layout_marginTop="15dp"
         android:text="Connection Status"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/holo_red_dark"
         android:textSize="18sp"
         android:textStyle="italic" />
 </RelativeLayout>
