@@ -176,10 +176,9 @@ public class MainActivity extends AppCompatActivity {
     };
 
     WifiP2pManager.ConnectionInfoListener connectionInfoListener = new WifiP2pManager.ConnectionInfoListener() {
-        private WifiP2pInfo wifiP2pInfo;
 
         @Override
-        public void onConnectionInfoAvailable(WifiP2pInfo info) {
+        public void onConnectionInfoAvailable(WifiP2pInfo wifiP2pInfo) {
             final InetAddress groupOwnerAddress = wifiP2pInfo.groupOwnerAddress;
             if(wifiP2pInfo.groupFormed && wifiP2pInfo.isGroupOwner){
                 connectionStatus.setText("Host");
